@@ -12,7 +12,7 @@ const config: config = {
   // This feature is particularly useful in development mode, but
   // can be used in production as well if you prefer.
   persistNavigation: 'dev',
-  appName: 'My App',
+  appName: 'PanoramaPal',
   graphqlUri: process.env.GRAPHQL_API || 'http://localhost:4000/graphql',
   isDev: process.env.NODE_ENV === 'development',
   env: process.env.NODE_ENV || 'development',
