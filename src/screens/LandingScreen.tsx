@@ -28,14 +28,9 @@ export default function LandingScreen({ navigation }: Props) {
 
   return (
     <Layout hasSafeArea={false}>
-      <Box
-        justifyContent="space-evenly"
-        h="100%"
-        bgColor="$secondary800"
-        py={20}
-      >
+      <Box justifyContent="space-evenly" h="100%" bgColor="$primary" py={20}>
         <Box alignItems="center">
-          <Text color="$white" size="6xl">
+          <Text color="$white" size="4xl">
             {config?.appName}
           </Text>
         </Box>

@@ -1,10 +1,13 @@
 /* eslint-disable react/no-unstable-nested-components */
 import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import CreatePostScreen from '@src/screens/CreatePostScreen';
 import Icon from 'react-native-vector-icons/Feather';
 
 import AccountNavigator from './stacks/AccountNavigator';
 import HomeNavigator from './stacks/HomeNavigator';
+import NotificationNavigator from './stacks/NotificationNavigator';
+import SearchNavigator from './stacks/SearchNavigator';
 import { RootTabParamList, RootTabScreenProps } from './types';
 
 const BottomTab = createBottomTabNavigator<RootTabParamList>();
@@ -15,6 +18,7 @@ const BottomTabNavigator = () => {
       initialRouteName="HomeTab"
       screenOptions={{
         headerShown: false,
+        tabBarShowLabel: false,
       }}
     >
       <BottomTab.Screen
@@ -22,9 +26,41 @@ const BottomTabNavigator = () => {
         component={HomeNavigator}
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         options={({ navigation }: RootTabScreenProps<'HomeTab'>) => ({
-          title: 'Home',
           tabBarIcon: ({ color, size }) => (
             <Icon name="home" color={color} size={size} />
+          ),
+        })}
+      />
+
+      <BottomTab.Screen
+        name="SearchTab"
+        component={SearchNavigator}
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        options={({ navigation }: RootTabScreenProps<'SearchTab'>) => ({
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="search" color={color} size={size} />
+          ),
+        })}
+      />
+
+      <BottomTab.Screen
+        name="CreatePostTab"
+        component={CreatePostScreen}
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        options={({ navigation }: RootTabScreenProps<'CreatePostTab'>) => ({
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="plus" color={color} size={size} />
+          ),
+        })}
+      />
+
+      <BottomTab.Screen
+        name="NotificationTab"
+        component={NotificationNavigator}
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
+        options={({ navigation }: RootTabScreenProps<'NotificationTab'>) => ({
+          tabBarIcon: ({ color, size }) => (
+            <Icon name="bell" color={color} size={size} />
           ),
         })}
       />
@@ -33,7 +69,6 @@ const BottomTabNavigator = () => {
         component={AccountNavigator}
         // eslint-disable-next-line @typescript-eslint/no-unused-vars
         options={({ navigation }: RootTabScreenProps<'AccountTab'>) => ({
-          title: 'Account',
           tabBarIcon: ({ color, size }) => (
             <Icon name="user" color={color} size={size} />
           ),

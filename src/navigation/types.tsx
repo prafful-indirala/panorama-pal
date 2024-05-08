@@ -19,6 +19,9 @@ import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 export type RootTabParamList = {
   HomeTab: undefined;
+  SearchTab: undefined;
+  CreatePostTab: undefined;
+  NotificationTab: undefined;
   AccountTab: undefined;
 };
 
@@ -45,6 +48,18 @@ export type SharedScreenParams = {
 
 export type HomeStackParams = {
   DashboardScreen: undefined;
+};
+
+export type SearchStackParams = {
+  SearchScreen: undefined;
+};
+
+export type NotificationStackParams = {
+  NotificationScreen: undefined;
+};
+
+export type CreatePostStackParams = {
+  CreatePostScreen: undefined;
 };
 
 export type AccountStackParams = {

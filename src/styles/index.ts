@@ -29,6 +29,14 @@ export const gluestackUIConfig = createConfig({
   // Generate tokens: https://smart-swatch.netlify.app
   tokens: {
     colors: {
+      primary: '#253238',
+      secondary: '#EC5A4D',
+      lightBlue: '#0094FF',
+      lightGrey: '#ADADAD',
+      lightGreen: '#00C838',
+      yellow: '##FEDA60',
+      white: '#FFFFFF',
+      black: '#000000',
       rose50: '#fff1f2',
       rose100: '#ffe4e6',
       rose200: '#fecdd3',
@@ -420,8 +428,6 @@ export const gluestackUIConfig = createConfig({
       backgroundDarkInfo: '#1A282E',
       backgroundLightMuted: '#F6F6F7',
       backgroundDarkMuted: '#252526',
-      white: '#FFFFFF',
-      black: '#000000',
     },
     space: {
       px: '1px',
