@@ -13,13 +13,15 @@ const AccountNavigator = () => (
       ...stackNavigatorOptions,
     }}
   >
-    <Stack.Screen
-      name="AccountScreen"
-      component={AccountScreen}
-      options={{
-        title: 'Account',
-      }}
-    />
+    <Stack.Group screenOptions={{ headerShown: false }}>
+      <Stack.Screen
+        name="AccountScreen"
+        component={AccountScreen}
+        options={{
+          title: 'Account',
+        }}
+      />
+    </Stack.Group>
   </Stack.Navigator>
 );
 
