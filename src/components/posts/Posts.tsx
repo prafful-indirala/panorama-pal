@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Image, ScrollView, View } from '@gluestack-ui/themed';
+import { ScrollView, View } from '@gluestack-ui/themed';
 
 import PostCard from './PostCard';
 

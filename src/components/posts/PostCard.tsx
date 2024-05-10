@@ -42,7 +42,7 @@ const PostContent = () => (
   <View alignSelf="center" w="100%">
     <Center>
       <Image
-        source={require('../../../assets/images/post.jpg')}
+        source={require('../../../assets/images/places/post.jpg')}
         h={220}
         w="95%"
         borderRadius={30}
