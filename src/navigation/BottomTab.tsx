@@ -3,10 +3,7 @@ import * as React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MyBottomTabs from '@src/components/MyBottomTabs';
 import CreatePostScreen from '@src/screens/CreatePostScreen';
-import { Text } from 'react-native-svg';
 import Icon from 'react-native-vector-icons/Feather';
-
-import { Image } from '@gluestack-ui/themed';
 
 import AccountNavigator from './stacks/AccountNavigator';
 import HomeNavigator from './stacks/HomeNavigator';
@@ -20,26 +17,8 @@ const BottomTabNavigator = () => {
   return (
     <BottomTab.Navigator
       initialRouteName="HomeTab"
-      // tabBar={props => <MyBottomTabs {...props} />}
-      screenOptions={{
-        tabBarShowLabel: false,
-        tabBarStyle: {
-          // paddingVertical: 5,
-          // borderTopLeftRadius: 15,
-          // borderTopRightRadius: 15,
-          backgroundColor: '#253238',
-          // height: 150,
-        },
-        tabBarActiveTintColor: '#0094FF',
-      }}
+      tabBar={props => <MyBottomTabs {...props} />}
     >
-      {/* <Image
-              source={require('../../assets/images/logo.png')}
-              h={40}
-              w={40}
-              rounded={30}
-              ml={10}
-            /> */}
       <BottomTab.Screen
         name="HomeTab"
         component={HomeNavigator}
