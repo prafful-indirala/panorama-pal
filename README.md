@@ -1,6 +1,10 @@
-# React Native Template
+# PanoramaPal 360 App
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions before proceeding.
+A mobile application built using React Native
+
+<p align="center">
+  <img src="https://github.com/prafful-indirala/panorama-pal/tree/main/assets/images/app.png" alt="app" />
+</p>
 
 ## Installation
 
