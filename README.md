@@ -3,7 +3,7 @@
 A mobile application built using React Native
 
 <p align="center">
-  <img src="https://github.com/prafful-indirala/panorama-pal/tree/main/assets/images/app.png" alt="app" />
+  <img src="./assets/images/app.png" alt="app"  width="200"/>
 </p>
 
 ## Installation
@@ -70,7 +70,3 @@ Clear watchman cache (in case some random issues)
 ```bash
 watchman watch-del-all
 ```
-
-## TODO
-
--
