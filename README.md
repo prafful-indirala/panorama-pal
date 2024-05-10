@@ -2,8 +2,8 @@
 
 A mobile application built using React Native
 
-<p align="center">
-  <img src="./assets/images/app.png" alt="app"  width="200"/>
+<p>
+  <img src="./assets/images/app.png" alt="app"  width="300"/>
 </p>
 
 ## Installation
