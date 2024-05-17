@@ -19,6 +19,7 @@
     "@react-navigation/bottom-tabs": "^6.5.20",
     "@react-navigation/native": "^6.1.17",
     "@react-navigation/native-stack": "^6.9.26",
+    "@viro-community/react-viro": "^2.41.0",
     "apollo-link-logger": "^2.0.1",
     "apollo-link-queue": "^3.1.0",
     "apollo-link-retry": "^2.2.16",
