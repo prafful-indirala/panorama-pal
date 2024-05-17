@@ -9,7 +9,7 @@ import Layout from '@components/Layout';
 export default function HomeScreen() {
   return (
     <Layout hasSafeArea={true}>
-      <VStack gap={16} height="100%">
+      <VStack gap={16} height="100%" backgroundColor="$white">
         <Highlights />
         <Posts />
       </VStack>
