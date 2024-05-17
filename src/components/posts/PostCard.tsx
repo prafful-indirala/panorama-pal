@@ -14,6 +14,7 @@ import {
 } from '@gluestack-ui/themed';
 
 import CurveSvg from '../CurveSvg';
+import View360Image from '../View360Image';
 
 const PostHeader = () => (
   <HStack justifyContent="space-between" alignItems="center">
@@ -41,12 +42,13 @@ const PostHeader = () => (
 const PostContent = () => (
   <View alignSelf="center" w="100%">
     <Center>
-      <Image
+      {/* <Image
         source={require('../../../assets/images/places/post.jpg')}
         h={220}
         w="95%"
         borderRadius={30}
-      />
+      /> */}
+      <View360Image />
     </Center>
   </View>
 );

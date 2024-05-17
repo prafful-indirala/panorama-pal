@@ -10,31 +10,31 @@ const userPosts = [
     name: 'User 1',
     image: require('../../../assets/images/user.png'),
   },
-  {
-    id: 2,
-    name: 'User 2',
-    image: require('../../../assets/images/user.png'),
-  },
-  {
-    id: 3,
-    name: 'User 3',
-    image: require('../../../assets/images/user.png'),
-  },
-  {
-    id: 4,
-    name: 'User 4',
-    image: require('../../../assets/images/user.png'),
-  },
-  {
-    id: 5,
-    name: 'User 5',
-    image: require('../../../assets/images/user.png'),
-  },
-  {
-    id: 6,
-    name: 'User 6',
-    image: require('../../../assets/images/user.png'),
-  },
+  // {
+  //   id: 2,
+  //   name: 'User 2',
+  //   image: require('../../../assets/images/user.png'),
+  // },
+  // {
+  //   id: 3,
+  //   name: 'User 3',
+  //   image: require('../../../assets/images/user.png'),
+  // },
+  // {
+  //   id: 4,
+  //   name: 'User 4',
+  //   image: require('../../../assets/images/user.png'),
+  // },
+  // {
+  //   id: 5,
+  //   name: 'User 5',
+  //   image: require('../../../assets/images/user.png'),
+  // },
+  // {
+  //   id: 6,
+  //   name: 'User 6',
+  //   image: require('../../../assets/images/user.png'),
+  // },
 ];
 
 export default function Posts() {
